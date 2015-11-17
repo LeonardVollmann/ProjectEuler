@@ -1,5 +1,5 @@
 def is_prime(x, primes):
-	for i in range(0, len(primes)):
+	for i in xrange(0, len(primes)):
 		if (primes[i] > x):
 			return True
 
@@ -15,7 +15,7 @@ def next_prime(index, primes):
 			return x
 
 primes = [2]
-for i in range(0, 10000):
+for i in xrange(0, 10000):
 	p = next_prime(i, primes)
 	primes.append(p)
 	print(p)

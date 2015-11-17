@@ -22,9 +22,9 @@ series = "\
 
 largest = 0
 
-for i in range(0, len(series) - 13):
+for i in xrange(0, len(series) - 13):
 	n = int(series[i])
-	for j in range(1, 13):
+	for j in xrange(1, 13):
 		n *= int(series[i + j])
 	if n > largest:
 		largest = n

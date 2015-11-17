@@ -7,6 +7,6 @@ def findTriplet(nums, target):
 			if a*a + b*b == c*c:
 				return a, b, c
 
-nums = [ x for x in range(1, 1000) ]
+nums = range(1, 1000)
 result = findTriplet(nums, 1000)
 print(result[0] * result[1] * result[2])

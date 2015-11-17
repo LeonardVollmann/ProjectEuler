@@ -9,7 +9,7 @@ while current < 4000000:
 		current = nums[l - 1] + nums[l - 2]
 
 sum = 0
-for i in range(len(nums)):
+for i in xrange(len(nums)):
 	if (nums[i] % 2 == 0):
 		sum += nums[i]
 
